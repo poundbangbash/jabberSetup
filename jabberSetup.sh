@@ -71,7 +71,7 @@ defaults write com.cisco.Jabber ARXSsoOrgKey -string "DOMAIN.com"
 defaults write com.cisco.Jabber SUEnableAutomaticChecks -bool False
 
 # Turns off auto-starting video on calls
-defaults write ARXUserDefaultsStartCallsWithVideoKey -bool False
+defaults write com.cisco.Jabber ARXUserDefaultsStartCallsWithVideoKey -bool False
 
 #Jabber client version 9.x has some extra configurations to make it user friendlier
 # If computer has client version 8.x this file is not used
