@@ -41,6 +41,9 @@ then
 	#Delete Jabber preferences
 	if [ ! -f ~/Library/Preferences/com.cisco.Jabber.plist ]
 	then
+		# In testing found that some domain keys weren't being written on first login.
+		# Assuming a race condition put in a touch to create the file and a sleep to 
+		# wait for whatever was blocking the writes to pass
 		touch ~/Library/Preferences/com.cisco.Jabber.plist
 		sleep 10
 	else
