@@ -1,5 +1,5 @@
 #!/bin/bash
-#Script to configure Cisco Jabber 8.6.7 & 9.6 for deployment.
+#Script to configure Cisco Jabber 8.6.7 & 9.6 for deployment.ааа
 
 #If Lion or Mountain Lion, add the company WORKGROUP to the path
 majorOSVersion=`sw_vers | awk '/ProductVersion/ { print $2 }' | awk -F"." '{ print $2 }'`
